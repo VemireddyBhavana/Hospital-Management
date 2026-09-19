@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Patients | MediCare Hospital</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <section class="patient-page">
+
+        <h1>Patient Management</h1>
+
+        <div class="patient-form">
+
+            <input type="text" id="patientName" placeholder="Patient Name">
+
+            <input type="number" id="patientAge" placeholder="Age">
+
+            <select id="patientGender">
+
+                <option>Male</option>
+
+                <option>Female</option>
+
+                <option>Other</option>
+
+            </select>
+
+            <input type="text" id="patientDisease" placeholder="Disease">
+
+            <button onclick="addPatient()">
+
+                Add Patient
+
+            </button>
+
+        </div>
+
+        <div class="search-box">
+
+            <input type="text" id="searchPatient"
+
+                placeholder="Search Patient..."
+
+                onkeyup="searchPatient()">
+
+        </div>
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Name</th>
+
+                    <th>Age</th>
+
+                    <th>Gender</th>
+
+                    <th>Disease</th>
+
+                    <th>Actions</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="patientTable">
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

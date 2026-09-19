@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Doctors | MediCare Hospital</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<section class="doctor-page">
+
+<h1>Doctor Management</h1>
+
+<div class="doctor-form">
+
+<input type="text" id="doctorName" placeholder="Doctor Name">
+
+<select id="doctorDepartment">
+
+<option>Cardiology</option>
+<option>Neurology</option>
+<option>Orthopedics</option>
+<option>Pediatrics</option>
+<option>General Medicine</option>
+
+</select>
+
+<input type="number" id="doctorExperience" placeholder="Experience (Years)">
+
+<input type="number" id="doctorFee" placeholder="Consultation Fee">
+
+<button onclick="addDoctor()">
+
+Add Doctor
+
+</button>
+
+</div>
+
+<div class="search-box">
+
+<input
+type="text"
+id="searchDoctor"
+placeholder="Search Doctor..."
+onkeyup="searchDoctor()">
+
+</div>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Name</th>
+
+<th>Department</th>
+
+<th>Experience</th>
+
+<th>Fee</th>
+
+<th>Actions</th>
+
+</tr>
+
+</thead>
+
+<tbody id="doctorTable">
+
+</tbody>
+
+</table>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

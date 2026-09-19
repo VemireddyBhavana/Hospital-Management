@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Appointments | MediCare Hospital</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<section class="appointment-page">
+
+<h1>Appointment Management</h1>
+
+<div class="appointment-form">
+
+<input type="text" id="patientNameApp" placeholder="Patient Name">
+
+<input type="text" id="doctorNameApp" placeholder="Doctor Name">
+
+<input type="date" id="appointmentDate">
+
+<input type="time" id="appointmentTime">
+
+<select id="appointmentStatus">
+
+<option>Scheduled</option>
+<option>Completed</option>
+<option>Cancelled</option>
+
+</select>
+
+<button onclick="addAppointment()">
+
+Book Appointment
+
+</button>
+
+</div>
+
+<div class="search-box">
+
+<input
+type="text"
+id="searchAppointment"
+placeholder="Search Appointment..."
+onkeyup="searchAppointment()">
+
+</div>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Patient</th>
+
+<th>Doctor</th>
+
+<th>Date</th>
+
+<th>Time</th>
+
+<th>Status</th>
+
+<th>Actions</th>
+
+</tr>
+
+</thead>
+
+<tbody id="appointmentTable">
+
+</tbody>
+
+</table>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
